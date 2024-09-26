@@ -194,6 +194,10 @@ body {
   justify-content: center;
   gap: 0;
   padding: 0;
+  background-image: url(../../assets/img-hero-principal-redimensionada.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 45rem;
   box-shadow: 0 0.1rem 1rem #000;
 }
