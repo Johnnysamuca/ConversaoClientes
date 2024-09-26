@@ -1,0 +1,38 @@
+.secao--hero {
+  @include flex($aling: center, $justify: center);
+  padding: 0;
+  background-image: url(../../assets/img-hero-principal-redimensionada.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45rem;
+  box-shadow: 0 0.1rem 1rem $black;
+}
+
+.caixa-hero {
+  @include flex(column, stretch, start, 1.28rem);
+  max-width: 72rem;
+  background-color: $black;
+  color: $white;
+  padding: 1.02rem 1.6rem;
+  border-radius: 1rem;
+
+  @include respond(medium) {
+    max-width: 65rem;
+  }
+
+  @include respond(small) {
+    max-width: 50rem;
+  }
+
+  &_titulo {
+    line-height: 1;
+    font-size: 3.12rem;
+  }
+
+  &_btn {
+    @include flex($aling: center, $justify: space-between);
+    background-color: $white;
+    color: $black;
+  }
+}

@@ -1,0 +1,22 @@
+.caixa-passo {
+  @include flex(column, start, start, 2.3rem);
+  background-color: $white;
+  color: $black;
+  border-radius: 0.86rem;
+  max-width: 30rem;
+  padding: 1.6rem 2.3rem;
+  height: 35rem;
+
+  &_caixa-titulos {
+    @include flex(column, start, start, 1.6rem);
+  }
+
+  &_titulo {
+    font-size: 2.3rem;
+  }
+
+  &_subtitulo {
+    font-size: 1.92rem;
+    font-weight: 600;
+  }
+}

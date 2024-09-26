@@ -1,0 +1,129 @@
+.img-hero {
+  width: 3rem;
+}
+
+.secao--feature {
+  @include flex(column, center, start, 3.12rem);
+}
+
+.secao--personaliza {
+  @include flex(column, center, start, 2.3rem);
+
+  @include respond(medium) {
+    padding: 4.88rem 1.02rem;
+  }
+}
+
+.secao--dominio {
+  @include flex(column, center, center, 3rem);
+}
+
+.secao--pagamento {
+  @include flex(column, center, center, 3rem);
+}
+
+.secao--sobre {
+  @include flex(column, center, center, 6rem);
+  padding: 4.88rem 2.3rem;
+}
+
+.container--feature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.container--dominio {
+  display: grid;
+  grid-template-columns: repeat(2, 30rem);
+  gap: 5rem;
+
+  @include respond(small) {
+    grid-template-columns: repeat(1, 30rem);
+  }
+}
+
+.container--pagamento {
+  display: grid;
+  grid-template-columns: repeat(2, 30rem);
+  gap: 5rem;
+
+  @include respond(small) {
+    grid-template-columns: repeat(1, 30rem);
+  }
+}
+
+.container--sobre {
+  @include flex($gap: 6rem);
+  padding: 0;
+
+  @include respond(medium) {
+    @include flex(column, center, start, 3rem);
+  }
+}
+
+.container--rodape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @include respond(small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.caixa--feature {
+  height: 31.27rem;
+  font-weight: 600;
+
+  @include respond(large) {
+    height: 38.27rem;
+  }
+}
+
+.container--personaliza {
+  @include flex($aling: center, $gap: 1.6rem);
+  max-width: 100rem;
+  margin-top: 3rem;
+
+  @include respond(medium) {
+    @include flex($aling: center, $gap: 1.02rem);
+    padding: 1.92rem 0;
+  }
+
+  @include respond(small) {
+    @include flex($flow: column, $aling: center, $gap: 1.02rem);
+  }
+}
+
+.caixa--pesonaliza {
+  height: 26rem;
+  font-weight: 600;
+  background-color: $black;
+  color: $white;
+  padding: 1.6rem 0.86rem;
+}
+
+.caixa_svg--personaliza {
+  background-color: $white;
+}
+
+.btn-rodape {
+  width: 100%;
+
+  @include respond(medium) {
+    grid-column: 1 / span 3;
+  }
+
+  @include respond(small) {
+    grid-row: 3;
+  }
+}

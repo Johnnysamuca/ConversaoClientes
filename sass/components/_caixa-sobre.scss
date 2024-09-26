@@ -1,0 +1,29 @@
+.caixa-sobre {
+  @include flex($flow: column, $gap: 2.76rem);
+  max-width: 70rem;
+  color: $white;
+
+  &_subtitulo {
+    text-align: left;
+
+    @include respond(medium) {
+      text-align: center;
+    }
+  }
+
+  &_txt {
+    font-size: 1.92rem;
+  }
+
+  @include respond(xlarge) {
+    max-width: 60rem;
+  }
+
+  @include respond(large) {
+    max-width: 50rem;
+  }
+
+  @include respond(medium) {
+    max-width: 60rem;
+  }
+}
