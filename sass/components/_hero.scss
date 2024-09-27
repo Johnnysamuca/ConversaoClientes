@@ -1,4 +1,5 @@
 .secao--hero {
+  position: relative;
   @include flex($aling: center, $justify: center);
   padding: 0;
   background-image: url(../../assets/img-hero-principal-redimensionada.webp);

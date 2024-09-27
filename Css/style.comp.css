@@ -188,6 +188,7 @@ body {
 }
 
 .secao--hero {
+  position: relative;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -468,6 +469,15 @@ body {
   .btn-rodape {
     grid-row: 3;
   }
+}
+
+.atribuicao {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.comp.css.map */
